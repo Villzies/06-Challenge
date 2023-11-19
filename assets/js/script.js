@@ -4,7 +4,7 @@ const weatherCard = document.getElementById("weather-card")
 //function for grabbing geocode information from the openweathermap api
 const getWeather = function getWeather(event) {
   event.preventDefault();
-fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${"Austin"}}&limit=${"1"}&appid=${"bf982edcf16eb54619c1e757f8e942ba"}`,{
+fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${"Austin"}}&limit=${"1"}&appid=${"bf982edcf16eb54619c1e757f8e942ba"}`,{
   method: "GET",
   contentType: "application/json"
 })
